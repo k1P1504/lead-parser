@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Запуск терминальной программы парсера
+DIR="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"
+cd "$DIR" && exec ./venv/bin/python app.py "$@"
